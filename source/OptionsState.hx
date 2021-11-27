@@ -740,7 +740,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'GAMEPLAY',
 		'Downscroll',
 		'Middlescroll',
-		'Ghost Tapping',
+		'helpy',
 		'Note Delay',
 		'Note Splashes',
 		'Note Size',
@@ -926,8 +926,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 					case 'Middlescroll':
 						ClientPrefs.middleScroll = !ClientPrefs.middleScroll;
 
-					case 'Ghost Tapping':
-						ClientPrefs.ghostTapping = !ClientPrefs.ghostTapping;
+					case 'helpy':
+						ClientPrefs.helpy = !ClientPrefs.ghTapping;
 
 					case 'Camera Zooms':
 						ClientPrefs.camZooms = !ClientPrefs.camZooms;
@@ -1031,7 +1031,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "If checked, notes go Down instead of Up, simple enough.";
 			case 'Middlescroll':
 				daText = "If checked, hides Opponent's notes and your notes get centered.";
-			case 'Ghost Tapping':
+			case 'helpy':
 				daText = "If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.";
 			case 'Swearing':
 				daText = "If unchecked, your mom won't be angry at you.";
@@ -1111,8 +1111,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.downScroll;
 					case 'Middlescroll':
 						daValue = ClientPrefs.middleScroll;
-					case 'Ghost Tapping':
-						daValue = ClientPrefs.ghostTapping;
+					case 'helpy':
+						daValue = ClientPrefs.helpy;
 					case 'Swearing':
 						daValue = ClientPrefs.cursing;
 					case 'Custom Scroll Speed':
